@@ -4,6 +4,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
+/**
+ * @type {import('webpack').Configuration}
+ */
 module.exports = {
     entry: {
         main: "./src/index.ts"
@@ -23,6 +26,7 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
         filename: "[name]-[contenthash].bundle.js",
         assetModuleFilename: "asset-packs/[name]-[hash][ext][query]",
+        publicPath: process.env.NODE_ENV === "production" ? "/phaser_game/" : "/"
     },
     module: {
         rules: [

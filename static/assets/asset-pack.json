@@ -5,6 +5,17 @@
                 "url": "assets/FufuSuperDino.png",
                 "type": "image",
                 "key": "FufuSuperDino"
+            },
+            {
+                "url":"assets/key.png",
+                "type":"image",
+                "key":"key"
+            }
+            ,
+            {
+                "url":"assets/bigkey.png",
+                "type":"image",
+                "key":"bigkey"
             }
         ]
     },
